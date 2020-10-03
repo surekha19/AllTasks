@@ -1,0 +1,43 @@
+{
+    "details":{
+        "name":"bhagi",
+        "image":"woman.svg",
+        "email":"surekha.dasari@gmail.com",
+        "phoneNumber":"9876543210",
+        "address":"kakinada"
+    },
+
+    "careerobjective":{
+        "info1":"To become software developer"
+    },
+    "educationalqualification":[{
+        "institute":"SRKR engineering college",
+        "degree":"B.tech",
+        "passoutyear":"2022",
+        "percentage":"99%"
+    },
+    {
+        "institute":"Narayana college",
+        "degree":"Inter",
+        "passoutyear":"2018",
+        "percentage":"99%"
+    },{
+        "institute":"Bhashyam public school",
+        "degree":"10th",
+        "passoutyear":"2016",
+        "percentage":"99%"
+    }],
+
+    "technicalskills":[
+        {
+            "title":"programming languages",
+            "info":["C,Java,Python"]
+        },
+        {
+            "title":"databases",
+            "info":["sql,mangodb"]
+        }
+    ]
+
+
+}

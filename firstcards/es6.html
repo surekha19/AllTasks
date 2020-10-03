@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myfirst=function sample(){
+          console.log("normal function");
+        }
+
+        var mysecond=function(){
+            console.log("ananymous function");
+        }
+
+        var mythird=()=>{
+          console.log("arrow function");
+        }
+
+        var withoutparenthesis=a=>{
+         console.log(a + " only for single parameter");
+        }
+
+        var withoutbraces=()=>console.log("this is possible for only single line statement");
+
+        var withpara=(a,b,c,d)=>{
+            console.log(a+b+" "+c+d);
+            // variety answer we ll get
+        }
+
+        var d=(a,b,c=23)=>{
+            console.log(a+" "+b+" "+c)
+        }
+
+        myfirst();
+        mysecond();
+        mythird();
+        withoutparenthesis(9);
+        withoutbraces();
+        withpara(1,2,3,4);
+        d(1,2);
+
+// rest parameter
+function adding(...s){
+    let sum=0;
+    for(let i of s){
+        sum=sum+i;
+    }
+    console.log("summation using rest parameter :"+sum);
+}
+// here we can pass any number of arguments
+adding(1,20,5,4);
+
+function sub(a,...args){
+   console.log(a + " " + args)
+}
+
+sub(25,34,5,6,7,8,"react",5);
+
+// arrow function with rest parameters
+var restp=(a,...args)=>{
+    console.log(a+" "+args);
+}
+
+restp(25,34,5,6,7,8,"react",5);
+
+// diff
+var react=["html","css","js","bootstrap"];
+var [a,b,...r]=react;
+// here html goes to a,css goes to b and then remaining goes to rest parameter in the form of array
+console.log(a);
+console.log(b);
+console.log(r);
+
+var vehicles=["car","van","bus","cycle"];
+var newvehicles=[...vehicles,"train","motarcycle"]
+console.log(vehicles);
+console.log(newvehicles);
+
+
+    </script>
+
+</body>
+</html>
